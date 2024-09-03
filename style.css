@@ -1,0 +1,175 @@
+body{
+    font-family:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           "Cabin", sans-serif;
+}
+.nav-item1{
+    padding: 5px;
+}
+.nav-link {
+    color: black; 
+    transition: color 0.3s ease; 
+}
+.nav-link:hover {
+    color: #808080;
+}
+.c-justify-content-center{
+    margin-top: 30px;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+nav-center{
+    justify-content: center;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 25px;
+    padding: 5px 15px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-container input[type="text"] {
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    flex: 1;
+    color: #333;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #888;
+}
+
+.search-container svg {
+    width: 20px;
+    height: 20px;
+    color: #333;
+}
+.search-button {
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 25px;
+    padding: 5px 15px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 12px;
+}
+
+.search-button:hover {
+    background-color: #e0e0e0; 
+}
+.search-button img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+.c-item{
+    max-width: 90%; /* ปรับให้รูปภาพมีขนาดไม่เกิน 80% ของขนาด Carousel */
+    max-height: 90%; /* ปรับให้รูปภาพมีขนาดไม่เกิน 80% ของขนาด Carousel */
+    margin: 0 auto; /* ทำให้รูปภาพอยู่ตรงกลาง */
+}
+.c-inner{
+    display: flex;
+    justify-content: center; /* จัดวางรูปภาพให้อยู่ตรงกลาง */
+    align-items: center; /* จัดวางในแนวตั้ง */
+    height: 100%; /* กำหนดความสูงเต็ม */
+}
+
+.text_1{
+    font-size: 65px;
+    padding: 1% 15px;
+    font-weight: bold;
+}
+.text_2{
+    font-size: 20px;
+    padding: 0 15px;
+}
+.nav {
+    margin-bottom: 10px;
+}
+
+.text_1 {
+    font-size: 65px; /* ฟอนต์สำหรับข้อความแรก */
+    text-align: center;
+    padding: 0 15px;
+    margin-top: 13px;
+}
+
+.text_2 {
+    font-size: 20px; /* ฟอนต์สำหรับข้อความที่สอง */
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* สำหรับ iPad และหน้าจอขนาดกลาง (เช่น แล็ปท็อป) */
+@media (max-width: 1024px) {
+    .text_1{
+        font-size: 65px; /* ลดขนาดฟอนต์สำหรับข้อความแรก */
+    }
+
+    .text_2 {
+        font-size: 20px; /* ลดขนาดฟอนต์สำหรับข้อความที่สอง */
+    }
+}
+
+/* สำหรับมือถือและหน้าจอขนาดเล็ก */
+@media (max-width: 768px) {
+    .text_1{
+        font-size: 45px; /* ลดขนาดฟอนต์ลงอีกสำหรับข้อความแรก */
+    }
+
+    .text_2 {
+        font-size: 14px; /* ลดขนาดฟอนต์ลงอีกสำหรับข้อความที่สอง */
+    }
+}
+
+/* สำหรับมือถือที่มีหน้าจอขนาดเล็กมาก */
+@media (max-width: 480px) {
+    .text_1{
+        font-size: 40px; /* ลดขนาดฟอนต์สำหรับข้อความแรก */
+    }
+
+    .text_2 {
+        font-size: 10px; /* ลดขนาดฟอนต์สำหรับข้อความที่สอง */
+    }
+}
+.carousel-item{
+    max-width: 90%; /* ปรับให้รูปภาพมีขนาดไม่เกิน 80% ของขนาด Carousel */
+    max-height: 90%; /* ปรับให้รูปภาพมีขนาดไม่เกิน 80% ของขนาด Carousel */
+    margin: 0 auto; /* ทำให้รูปภาพอยู่ตรงกลาง */
+    margin-top: 20px;
+}
+.carousel-inner{
+    display: flex;
+    justify-content: center; /* จัดวางรูปภาพให้อยู่ตรงกลาง */
+    align-items: center; /* จัดวางในแนวตั้ง */
+    height: 100%; /* กำหนดความสูงเต็ม */
+}
+.container{
+    margin-top: 40px;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+}
+.btn-main{
+    background-color: black;
+    color: white;
+}
+.bg-orange{
+    background-color: #7a7a7a;
+}
+.author-details img{
+    height: 50px;
+    width: 50px;
+}
+.bg-tertiary{
+    margin-top: 40px;
+}
